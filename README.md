@@ -29,14 +29,15 @@ WriteWithMe is a lightweight progressive web application (PWA) geared toward sof
 
 <h2 id="project-live">See it deployed live where you can download!</h2>
 
-[See application live here!]()
+[See application live here!](https://sleepy-beach-06930.herokuapp.com/)
 
 <h2 id="project-captures">Screen captures</h2>
 
 | Image | Description |
 | --- | ----------- |
-|  ![]() | Application in use |
-
+|  ![Application in use](./server/otherassets/application.png) | Application in use as Progressive Web App |
+|  ![ Application install](./server/otherassets/annotated.png) | Application install from browser |
+|  ![Application download prompt ](./server/otherassets/downloadprompt.png) | Application download prompt |
 
 <h2 id="project-tech">Technology</h2>
 
