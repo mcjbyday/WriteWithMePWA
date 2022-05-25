@@ -41,7 +41,7 @@ module.exports = () => {
         fingerprints: false,
         icons: [
           {
-            src: path.resolve('src/images/pen.svg'),
+            src: path.resolve('src/images/logo2.png'),
             sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join('assets', 'icons'),
           },
