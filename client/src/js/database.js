@@ -28,7 +28,7 @@ export const putDb = async (content) => {
 
   // Use the .add() method on the store and pass in the content.
   // only want to deal with one entry in the database, which has an id of 1
-  const request = store.put({ id: 1, content }); // equivalent to content: content
+  const request = store.put({ id: 1, content: content }); // equivalent to content: content
 
   // Get confirmation of the request.
   const result = await request;
