@@ -18,7 +18,18 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      new GenerateSW(),
+      // new GenerateSW(),
+      // Webpack plugin that generates our html file and injects our bundles. 
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'Contact Cards'
+      }),
+     
+      // Injects our custom service worker
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js',
+      }),
       new WebpackPwaManifest({
         name: 'WriteWithMe_PWA',
         short_name: 'WriteWithMe',
@@ -27,6 +38,7 @@ module.exports = () => {
         theme_color: '#FFFFFF',
         start_url: '/',
         publicPath: '/',
+        fingerprints: false,
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
